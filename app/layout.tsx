@@ -10,8 +10,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Lululemon Method",
-  description: "Discover how people are unlocking up to $750 in Lululemon rewards. Complete simple steps and claim your gift card today.",
+  title: "Lulu Method",
+  description: "Discover how people are unlocking up to $750 in Lulu rewards. Complete simple steps and claim your gift card today.",
   generator: "v0.app",
   icons: {
     icon: [
@@ -25,26 +25,26 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "Lululemon Method",
-    description: "Unlock up to $750 in Lululemon rewards with a simple process.",
-    siteName: "Lululemon Method",
+    title: "Lulu Method",
+    description: "Unlock up to $750 in Lulu rewards with a simple process.",
+    siteName: "Lulu Method",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Lululemon Logo",
+        alt: "Lulu Method",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lululemon Method",
-    description: "Unlock up to $750 in Lululemon rewards with a simple process.",
+    title: "Lulu Method",
+    description: "Unlock up to $750 in Lulu rewards with a simple process.",
     images: ["/og-image.jpg"],
   },
   other: {
-    "apple-mobile-web-app-title": "Lululemon Method",
+    "apple-mobile-web-app-title": "Lulu Method",
   },
 }
 
