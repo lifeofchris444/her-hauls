@@ -34,7 +34,7 @@ export function FAQ() {
   };
 
   return (
-    <section id="faq" ref={sectionRef} className="py-12 sm:py-16 px-4 relative">
+    <section id="faq" ref={sectionRef} className="py-10 sm:py-14 px-4 relative">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse-soft" />
         <div className="absolute -top-32 -right-32 w-96 h-96 bg-secondary/30 rounded-full blur-3xl animate-pulse-soft" style={{ animationDelay: "1.5s" }} />
@@ -42,7 +42,7 @@ export function FAQ() {
 
       <div className="max-w-3xl mx-auto relative z-10">
         <div
-          className={`text-center mb-8 sm:mb-10 transition-all duration-700 ease-out ${
+          className={`text-center mb-6 sm:mb-8 transition-all duration-700 ease-out ${
             sectionVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
@@ -58,7 +58,7 @@ export function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`bg-card border border-border/60 rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#D51332]/30 touch-card ${
+              className={`bg-card border border-border/60 rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#000000]/30 touch-card ${
                 sectionVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
               }`}
               style={{
@@ -69,17 +69,17 @@ export function FAQ() {
             >
               <button
                 onClick={() => toggleAccordion(index)}
-                className="touch-expand w-full flex items-center gap-4 p-6 text-left cursor-pointer group rounded-2xl"
+                className="touch-expand w-full flex items-center gap-4 p-5 text-left cursor-pointer group rounded-2xl"
               >
-                <div className="touch-icon flex-shrink-0 w-12 h-12 bg-muted rounded-xl flex items-center justify-center group-hover:bg-accent transition-colors duration-200">
-                  <faq.icon className="w-6 h-6 text-foreground/70" strokeWidth={1.5} />
+                <div className="touch-icon flex-shrink-0 w-12 h-12 bg-muted rounded-xl flex items-center justify-center group-hover:bg-[#000000]/10 transition-colors duration-200">
+                  <faq.icon className="w-6 h-6 text-foreground/70 group-hover:text-[#000000] transition-colors duration-200" strokeWidth={1.5} />
                 </div>
                 <span className="flex-1 font-semibold text-foreground text-lg">
                   {faq.question}
                 </span>
-                <div className="touch-icon flex-shrink-0 w-10 h-10 bg-muted rounded-full flex items-center justify-center group-hover:bg-accent transition-colors duration-200">
+                <div className="touch-icon flex-shrink-0 w-10 h-10 bg-muted rounded-full flex items-center justify-center group-hover:bg-[#000000]/10 transition-colors duration-200">
                   <ChevronDown
-                    className={`w-5 h-5 text-foreground/70 transition-transform duration-300 ease-out ${
+                    className={`w-5 h-5 text-foreground/70 group-hover:text-[#000000] transition-all duration-300 ease-out ${
                       openIndex === index ? "rotate-180" : ""
                     }`}
                     strokeWidth={1.5}
@@ -92,7 +92,7 @@ export function FAQ() {
                   openIndex === index ? "max-h-48 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <div className="px-6 pb-6 pt-0 pl-[4.5rem]">
+                <div className="px-5 pb-5 pt-0 pl-[4.5rem]">
                   <p className="text-muted-foreground leading-relaxed font-light">
                     {faq.answer}
                   </p>

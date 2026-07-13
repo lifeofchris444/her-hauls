@@ -7,10 +7,10 @@ export function CTA() {
   const { ref: sectionRef, isVisible: sectionVisible } = useScrollAnimation({ threshold: 0.15 });
 
   return (
-    <section id="apply" ref={sectionRef} className="pt-12 pb-16 sm:pt-16 sm:pb-20 px-4 bg-card">
+    <section id="apply" ref={sectionRef} className="pt-10 pb-14 sm:pt-14 sm:pb-18 px-4 bg-card">
       <div className="max-w-4xl mx-auto">
         <div
-          className={`relative bg-[#D51332] rounded-3xl p-8 sm:p-12 text-center overflow-hidden transition-all duration-700 ease-out ${
+          className={`relative bg-[#000000] rounded-3xl p-7 sm:p-10 text-center overflow-hidden transition-all duration-700 ease-out ${
             sectionVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-8 scale-[0.98]"
           }`}
         >
@@ -37,7 +37,7 @@ export function CTA() {
           
           <div className="relative z-10">
             <div
-              className={`inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 mb-6 transition-all duration-500 ease-out ${
+              className={`inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 mb-5 transition-all duration-500 ease-out ${
                 sectionVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
               style={{ transitionDelay: sectionVisible ? "200ms" : "0ms" }}
@@ -47,7 +47,7 @@ export function CTA() {
             </div>
             
             <h2
-              className={`text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-4 max-w-2xl mx-auto text-balance transition-all duration-600 ease-out ${
+              className={`text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-3 max-w-2xl mx-auto text-balance transition-all duration-600 ease-out ${
                 sectionVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
               style={{ transitionDelay: sectionVisible ? "300ms" : "0ms" }}
@@ -56,12 +56,12 @@ export function CTA() {
             </h2>
             
             <p
-              className={`text-white/90 text-base sm:text-lg mb-8 max-w-xl mx-auto leading-relaxed font-normal transition-all duration-600 ease-out ${
+              className={`text-white/90 text-base sm:text-lg mb-7 max-w-xl mx-auto leading-relaxed font-normal transition-all duration-600 ease-out ${
                 sectionVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
               style={{ transitionDelay: sectionVisible ? "400ms" : "0ms" }}
             >
-              Join thousands of shoppers who have already claimed their $750 gift card. Your savings are just a few clicks away.
+              Join thousands of shoppers who have already claimed their $750 reward. Your upgrade is just a few clicks away.
             </p>
             
             <div
@@ -71,10 +71,10 @@ export function CTA() {
               style={{ transitionDelay: sectionVisible ? "500ms" : "0ms" }}
             >
               <a
-                href="https://trksy.org/aff_c?offer_id=1137&aff_id=26188"
+                href="https://trksy.org/aff_c?offer_id=3634&aff_id=26188"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="touch-button group inline-flex items-center gap-3 bg-white text-[#D51332] px-10 py-5 rounded-full text-lg font-semibold hover:bg-white/95 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+                className="touch-button group inline-flex items-center gap-3 bg-white text-[#000000] px-10 py-5 rounded-full text-lg font-semibold hover:bg-white/95 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
               >
                 APPLY NOW
                 <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -82,7 +82,7 @@ export function CTA() {
             </div>
             
             <p
-              className={`mt-5 text-sm text-white/80 font-medium transition-all duration-500 ease-out ${
+              className={`mt-4 text-sm text-white/80 font-medium transition-all duration-500 ease-out ${
                 sectionVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
               style={{ transitionDelay: sectionVisible ? "600ms" : "0ms" }}

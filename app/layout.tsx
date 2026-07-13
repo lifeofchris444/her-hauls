@@ -10,8 +10,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Lulu Method",
-  description: "Discover how people are unlocking up to $750 in Lulu rewards. Complete simple steps and claim your gift card today.",
+  title: "Coach Method",
+  description: "Discover how people are unlocking up to $750 in Coach rewards. Complete simple steps and claim your gift card today.",
   generator: "v0.app",
   icons: {
     icon: [
@@ -25,26 +25,26 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "Lulu Method",
-    description: "Unlock up to $750 in Lulu rewards with a simple process.",
-    siteName: "Lulu Method",
+    title: "Coach Method",
+    description: "Unlock up to $750 in Coach rewards with a simple process.",
+    siteName: "Coach Method",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Lulu Method",
+        alt: "Coach Rewards",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lulu Method",
-    description: "Unlock up to $750 in Lulu rewards with a simple process.",
+    title: "Coach Method",
+    description: "Unlock up to $750 in Coach rewards with a simple process.",
     images: ["/og-image.jpg"],
   },
   other: {
-    "apple-mobile-web-app-title": "Lulu Method",
+    "apple-mobile-web-app-title": "Coach Method",
   },
 }
 

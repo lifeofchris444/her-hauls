@@ -26,7 +26,7 @@ const steps = [
   },
   {
     icon: Trophy,
-    title: "Receive your $750 gift card",
+    title: "Receive your $750 reward",
     description: "Delivered straight to your inbox",
   },
 ];
@@ -35,12 +35,12 @@ export function Steps() {
   const { ref: sectionRef, isVisible: sectionVisible } = useScrollAnimation({ threshold: 0.05 });
 
   return (
-    <section id="how-it-works" ref={sectionRef} className="pt-4 pb-12 sm:pt-8 sm:pb-16 px-4 relative">
+    <section id="how-it-works" ref={sectionRef} className="pt-2 pb-6 sm:pt-4 sm:pb-10 px-4 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-muted/30 to-transparent pointer-events-none" />
       
       <div className="max-w-5xl mx-auto relative z-10">
         <div
-          className={`text-center mb-10 sm:mb-12 transition-all duration-700 ease-out ${
+          className={`text-center mb-8 sm:mb-10 transition-all duration-700 ease-out ${
             sectionVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
@@ -56,11 +56,11 @@ export function Steps() {
           {/* Connection line */}
           <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent -translate-y-1/2" />
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 lg:gap-4">
             {steps.map((step, index) => (
               <div
                 key={index}
-                className={`group bg-card border border-border/60 rounded-2xl p-5 hover:border-[#D51332]/30 transition-all duration-300 hover:shadow-lg hover:shadow-[#D51332]/5 hover:-translate-y-1 touch-card ${
+                className={`group bg-card border border-border/60 rounded-2xl p-4 hover:border-[#000000]/30 transition-all duration-300 hover:shadow-lg hover:shadow-black/5 hover:-translate-y-1 touch-card ${
                   sectionVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
                 style={{
@@ -72,7 +72,7 @@ export function Steps() {
                 <div className="flex items-start gap-4">
                   {/* Step number */}
                   <div
-                    className={`flex-shrink-0 w-8 h-8 bg-[#D51332] text-white rounded-full flex items-center justify-center text-sm font-semibold transition-all duration-500 ${
+                    className={`flex-shrink-0 w-8 h-8 bg-[#000000] text-white rounded-full flex items-center justify-center text-sm font-semibold transition-all duration-500 ${
                       sectionVisible ? "scale-100" : "scale-0"
                     }`}
                     style={{
@@ -83,8 +83,8 @@ export function Steps() {
                   </div>
                   
                   <div className="flex-1 min-w-0">
-                    <div className="touch-icon w-12 h-12 bg-muted rounded-xl flex items-center justify-center mb-3 group-hover:bg-accent transition-colors duration-300">
-                      <step.icon className="w-6 h-6 text-foreground/70" strokeWidth={1.5} />
+                    <div className="touch-icon w-12 h-12 bg-muted rounded-xl flex items-center justify-center mb-3 group-hover:bg-[#000000]/10 transition-colors duration-300">
+                      <step.icon className="w-6 h-6 text-foreground/70 group-hover:text-[#000000] transition-colors duration-300" strokeWidth={1.5} />
                     </div>
                     
                     <h3 className="font-semibold text-foreground mb-1.5">{step.title}</h3>
